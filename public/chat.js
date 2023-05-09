@@ -33,12 +33,12 @@ class Chat {
 
         socket.on('new-chat-message', (message) => {
             console.log('new-chat-message', message);
-            this.addMessage(message.text, message.SenderId);
+            this.addMessage(message.text, message.senderId);
 
-            if (message.SenderId === this.activateChat) {
-                this.renderMessages(message.SenderId)
+            if (message.senderId === this.activateChatId) {
+                this.renderMessages(message.senderId)
             } else {
-                console.log(message.SenderId)
+                console.log(message.senderId)
             }
         })
     }
