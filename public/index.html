@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is the title of the webpage</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="welcome-screen">
+      <h1>Please choose your name</h1>
+      <div>
+        <input type="text" />
+      </div>
+      <div>
+        <button>Login</button>
+      </div>
+    </div>
+    <div class="chat hidden">
+      <div class="users-list"></div>
+      <div class="messages">
+        <div class="current-user"></div>
+        <div class="messages-list"></div>
+        <input type="text" placeholder="Type your message" class="hidden" />
+      </div>
+    </div>
+    <script src="/welcome.js"></script>
+    <script src="/chat.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
